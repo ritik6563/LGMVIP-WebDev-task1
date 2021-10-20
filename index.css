@@ -1,0 +1,471 @@
+body{
+    padding: 0;
+    margin: 0;
+    --color1: #800080;
+    --color2: #ffff00;
+    color: white;
+    --main-heading:2.5rem;
+    --secondary-head:1.2rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar h1{
+    font-size: 2rem;
+    z-index: 2;
+}
+
+.navbar-items{
+    display: flex;
+    justify-content:space-around;
+}
+.navbar-items a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar-items a:hover{
+    cursor: pointer;
+    color: var(--color2);
+}
+.navbar-items li{
+    cursor: pointer;
+    list-style: none;
+    font-weight: 100;
+    margin: 1rem;
+    z-index: 2;
+}
+/*--------------------------------- section-1 ---------------------------------------------------------------------*/
+.section-1{
+    width: 98.75vw;
+    max-height: 100vh;
+}
+.section-1 img{
+    margin-top: -6rem;
+    z-index: -1;
+    width: 100%;
+    max-height:100vh;
+}
+.content-1{
+    display: flex;
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+    margin-top: -20rem;
+    justify-content: center;
+    align-items: center;
+}
+.main-content-1 h1{
+    color: white;
+    font-weight: bolder;
+    font-size: var(--main-heading);
+}
+.main-content-1 p{
+    font-size: var(--secondary-head);
+}
+.dots {
+    display: flex;
+    margin-top: 2.2rem;
+}
+.dots .radioClass{
+    border: 2px solid #7e7d7d;
+    padding: 4px 4px;
+    border-radius: 12px;
+    margin-right: 6px;
+    background-color: #9e9d9d;
+    cursor: pointer;
+}
+.btn{
+    padding: 7px 7px;
+    background-color: var(--color1);
+    border: none;
+    font-weight: lighter;
+    cursor: pointer;
+    margin: 3px;
+    color: #fff;;
+}
+.btn:hover{
+    background-color: var(--color2);
+    color: #000;
+}
+/*----------------------------------------------------welcome section----------------------------------------------*/
+.welcome-section{
+    width: 58vw;
+    padding: 15px 7px 0px 7px;
+    margin: auto;
+    margin-top: 1rem;
+}
+.welcome-section h1,.project h1,.pricing h1,.videos-project h1,.team h1,.zippy h1,.newsletter h1,.blog h1,.contact h1{
+    color: #000;
+    text-align: center;
+    font-size: var(--main-heading);
+    font-weight: bold;
+}
+.welcome-section .text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text{
+    margin-top: -1rem;
+}
+.welcome-section .text p{
+    color: #808080;
+    font-size: 1.5rem;
+    font-weight: lighter; 
+}
+.three-box,.videos-project .main-div,.video-div .title,.flex-img{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    justify-content: center;
+    align-self: center;
+}
+.box h4,.team .profile p,.team .profile h4{
+    text-align: center;
+    color: var(--color1);
+}
+.box p{
+    text-align: center;
+    color: #808080;
+    margin-bottom: 20px;
+    height: 20vh;
+    margin-top: -1px;
+    width: 10vw;
+    margin: auto;
+}
+.box span{
+    display: flex;
+    justify-content: center;
+}
+.box img{
+    width: 3vw;
+    background-color: var(--color1);
+    border-radius: 50%;
+    padding: 14px 14px;
+}
+.box-btn{
+    display: inline;
+    padding: 6px 6px;
+    background-color: var(--color1);
+    border: none;
+    font-weight: lighter;
+    cursor: pointer;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+}
+.box-btn:hover{
+    background-color: var(--color2);
+    color: #000;
+}
+hr{
+    margin: 2rem;
+}
+/*---------------------------------------Projects-------------*/
+.project{
+    height: 100vh;
+    width: 98.75vw;
+}
+.project-box{
+    width: 25vw;
+    height: 80vh;
+}
+.project .main-div{
+    display: flex;
+}
+.project-box h4{
+    margin: 2%;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+.project-box p,.team .profile p{
+    margin: 2%;
+    font-size: .8rem;
+    color: #bdbcbc; 
+    font-weight: bold;
+}
+.project-box img,.team .profile img{
+    max-width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+.project-box div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e9e7e7;
+    height: 40%;
+    overflow: hidden;
+}
+.project-box div:hover{
+    background-color: #ffff65;
+}
+
+.project-box div button{
+    margin: 2%;
+    background-color: #fff;
+    color: #000;
+    font-size: .6rem;
+    margin-top: 10%;
+    width: 50%;
+    padding: 6px 6px;
+}
+.project-box div button:hover{
+    background-color: var(--color1);
+    color: #fff;
+}
+/*----------------------------------------pricing--------------*/
+.pricing{
+    width: 50%;
+    margin: auto;
+    height: 60vh;
+}
+.pricing .vl{
+    height: 35vh;
+    border: 1px solid #d8d7d7;
+}
+.pricing p span{
+    margin-top: 12px;
+    color: #000;
+}
+/*-------------------------------------videos-projects--------------------------------------*/
+.videos-project{
+    height: 70vh;
+    background-color: #c726c7;
+}
+.videos-project h1{
+    color: #fff;
+    padding: 5px 5px;
+}
+.video-div{
+    width: 30vw;
+
+}
+.video-div video{
+    width: 100%;
+}
+/*------------------------------------------team----------------------*/
+.team .profile{
+    width: 15vw;
+    height: 30vh;
+    margin: 12px;
+}
+.team .profile h4{
+    color: #000;
+    margin-bottom: 0;
+}
+.team .profile p{
+    font-size: 1rem;
+    font-weight: inherit;
+}
+.team .profile img{
+    display: block;
+    width: 50%;
+    margin: auto;
+    border-radius:50%;
+}
+.team .profile img:hover{
+    cursor: pointer;
+}
+.profile-container{
+    width: 60vw;
+    margin: auto;
+}
+/*-------------------------------------------section-7-------------*/
+.zippy{
+    background: #f0efef;
+    height: 90vh;
+    padding-top: 2rem;
+}
+.imgcontainer{
+    width: 50vw;
+    height: 70vh;
+    margin: auto
+}
+#zippyMainImg{
+    margin-top: 2rem 0 1rem 0;
+    width: 100%;
+    height: 80%;
+}
+.imgSlider{
+    display: flex;
+    height: 10vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imgSlider span{
+    cursor: pointer;
+    background-color: var(--color1);
+    font-size: 2rem;
+    padding: .8rem .8rem;
+}
+.imgSlider span:hover{
+    cursor: pointer;
+    background-color: var(--color2);
+    color: #000;
+}
+.imgSlider img,.blogImg{
+    cursor: pointer;
+    width: 10vw;
+    height: 10vh;
+}
+/*---------------------------------section-8-----------------*/
+.back{
+    background-image: url('./img/cropped-shot-comfortable-office-room-260nw-1574074582.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.newsletter{
+    padding: 1rem 0.62rem 1rem 0;
+    height: 40vh;
+    width: 98vw;
+}
+form{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+form input{
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 70%;
+}
+form input::placeholder{
+    font-size: 20px;
+}
+form button,.blog-btn{
+    text-align: center;
+    margin: 1rem 0rem 0rem 0rem ;
+    cursor: pointer;
+    padding: 15px 25px;
+    color: #fff;
+    background-color: var(--color1);
+    border: none;
+}
+form button:hover,.blog-btn:hover{
+    background-color: var(--color2);
+    color: #000;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*--------------------------------------------------blog---------------------------*/
+.blog{
+    padding: 10px 10px;
+    display: flex;
+    margin: 50px 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}    
+.three-box-blog{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.blog-btn{
+    font-size: .6rem;
+    padding: 10px 10px;
+}
+.blog-box{
+    color: #000;
+    width: 20vw;
+    height: 50vh;
+}
+.blogImg{
+    width: 100%;
+    height: 40%;
+}
+.blog-box div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog-box h3,.blog-box p{
+    text-align: center;
+    margin: 0;
+}
+.blog-box h5{
+    color: #808080;
+}
+.blog-btn{
+    background-color: #808080;
+}
+/*---------------------------------------------------contact---------------*/
+.contact{
+    display: flex;
+    background-color: #fdfd5f;
+    height: 90vh;
+}
+.contact img{
+    width: 40%;
+}
+.contact div{
+    width: 50%;
+}
+.contact div form{
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    height: 82%;
+    width: 50%;
+}
+.contact div form button:hover{
+    background-color: #808080;
+}
+.contact div form input,.contact div form textarea{
+    height: 10%;
+    width: 98%;
+    margin-top: -1rem;
+}
+.contact div form p{
+    margin-top: 1rem;
+}
+.contact div form textarea{
+    height: 50%;
+}
+/*-----------------------------section-11---------------------*/
+.footer{
+    width: 50%;
+    margin-top: 2rem;
+    margin: auto;
+    padding: 2rem;
+    color: #000;
+    height: 20vh;
+}
+.footer .three-box h4,.footer .three-box p{
+    color: #000;
+}
+.footerdiv{
+    width: 50%;
+    margin-top: -4px;
+    height: 100%;
+}
+.footerdiv div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer img{
+    background-color: #fff;
+    width: 2.1vw;
+    height: 3vh;
+    cursor: pointer;
+}
+#b-2{
+    margin-top: -2.1rem;
+}
